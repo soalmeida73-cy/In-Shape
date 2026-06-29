@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-ice-blue: #7dd3fc;
+  --color-ice-blue-glow: rgba(125, 211, 252, 0.15);
+  --color-deep-space: #0a0e1a;
+  --color-glass-base: rgba(15, 21, 36, 0.6);
+  --color-glass-elevated: rgba(20, 28, 48, 0.75);
+}
+
+/* Custom glassmorphism utilities */
+.glass-panel {
+  background: rgba(15, 21, 36, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-elevated {
+  background: rgba(20, 28, 48, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  box-shadow: 0 0 30px rgba(125, 211, 252, 0.08);
+}
+
+.glass-input {
+  background: rgba(10, 14, 26, 0.4);
+  border: 1px solid rgba(125, 211, 252, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: rgba(125, 211, 252, 0.6);
+  box-shadow: 0 0 15px rgba(125, 211, 252, 0.2);
+  background: rgba(10, 14, 26, 0.6);
+}
+
+.glass-button-primary {
+  background: rgba(125, 211, 252, 0.15);
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  color: #7dd3fc;
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-button-primary:hover {
+  background: rgba(125, 211, 252, 0.3);
+  border-color: #7dd3fc;
+  box-shadow: 0 0 15px rgba(125, 211, 252, 0.25);
+}
+
+/* Base resets for a gorgeous dark deep navy aesthetic */
+body {
+  background-color: #0a0e1a;
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}

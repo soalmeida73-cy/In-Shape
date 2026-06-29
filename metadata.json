@@ -1,0 +1,6 @@
+{
+  "name": "In Shape",
+  "description": "In Shape - Aplicação de Treino Inclusivo. Focada em acessibilidade, mobilidade e força adaptada para todas as idades e limitações físicas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
